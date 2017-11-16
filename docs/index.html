@@ -1,0 +1,61 @@
+<!DOCTYPE HTML>
+<!--
+    The Protingumas homepage.
+    Copyright (C) 2017  Ryan Y.
+
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <https://www.gnu.org/licenses/>.
+  -->
+<html lang="en-gb">
+  <head>
+    <title>Protingumas</title>
+    <meta charset="utf-8" />
+    <meta name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <link rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css"
+      integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ"
+      crossorigin="anonymous" />
+  </head>
+
+  <body>
+    <div id="main">
+    </div>
+
+    <script type="text/javascript">
+      function handleElementLoad(element, handler) {
+        if (element.addEventListener) {
+          element.addEventListener('load', handler, false)
+        } else if (element.attachEvent) {
+          element.attachEvent('onload', handler)
+        } else {
+          element.onload = handler
+        }
+      }
+
+      function downloadJSAtOnload() {
+        var app = document.createElement('script')
+        app.src = 'app.js'
+        handleElementLoad(app, attachElm)
+        document.body.appendChild(app)
+      }
+
+      function attachElm() {
+        var node = document.getElementById('main')
+        Elm.Main.embed(node)
+      }
+
+      handleElementLoad(window, downloadJSAtOnload)
+    </script>
+  </body>
+</html>
