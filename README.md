@@ -21,4 +21,5 @@ This project contains the source for the Protingumas organisation homepage.
 
 ## Building
 
-Run `elm make --output docs/app.js Main.elm`.
+Run `npm start`.  This will run Webpack to build the Elm modules and to minify
+the output.

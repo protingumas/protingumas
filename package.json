@@ -1,0 +1,27 @@
+{
+  "name": "protingumas",
+  "version": "0.1.0",
+  "description": "The Protingumas homepage",
+  "main": "index.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "start": "webpack"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ryayak1460/protingumas.git"
+  },
+  "author": "Ryan Y",
+  "license": "GPL-3.0",
+  "bugs": {
+    "url": "https://github.com/ryayak1460/protingumas/issues"
+  },
+  "homepage": "https://github.com/ryayak1460/protingumas#readme",
+  "devDependencies": {
+    "elm-webpack-loader": "^4.4.0",
+    "webpack": "^3.8.1"
+  },
+  "dependencies": {}
+}

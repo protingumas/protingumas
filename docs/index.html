@@ -46,13 +46,7 @@
       function downloadJSAtOnload() {
         var app = document.createElement('script')
         app.src = 'app.js'
-        handleElementLoad(app, attachElm)
         document.body.appendChild(app)
-      }
-
-      function attachElm() {
-        var node = document.getElementById('main')
-        Elm.Main.embed(node)
       }
 
       handleElementLoad(window, downloadJSAtOnload)
