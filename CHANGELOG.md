@@ -22,6 +22,8 @@ We based the format on [Keep a Changelog][] and this project adheres to
 [Semantic Versioning][].
 
 ## [Unreleased][]
+
+## [0.1.0][] - 2017-11-15
 ### Added
 - Index page.
 - HTML document.
